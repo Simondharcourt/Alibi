@@ -1,0 +1,64 @@
+{
+  "personnages": [
+    {
+      "nom": "Jean Dupont",
+      "description": "Le professeur, victime de l'enquête.",
+      "titre": "Le professeur"
+    },
+    {
+      "nom": "Dr. Marie Curie",
+      "description": "Le médecin du professeur, qui a tenté de le sauver.",
+      "titre": "Médecin"
+    },
+    {
+      "nom": "Sophie Dupont",
+      "description": "La femme du professeur, dévastée par la perte.",
+      "titre": "Épouse"
+    },
+    {
+      "nom": "Lucas Dupont",
+      "description": "Le neveu du professeur, un jeune homme ambitieux.",
+      "titre": "Neveu"
+    },
+    {
+      "nom": "Clara Martin",
+      "description": "La belle-fille du professeur, qui a toujours eu des doutes sur lui.",
+      "titre": "Belle-fille"
+    },
+    {
+      "nom": "Pierre Lefèvre",
+      "description": "Un ami d'enfance du professeur, nostalgique de leur jeunesse.",
+      "titre": "Ami d'enfance"
+    },
+    {
+      "nom": "Émilie Bernard",
+      "description": "Une ex-collègue du professeur, qui connaît ses secrets.",
+      "titre": "Ex-collègue"
+    },
+    {
+      "nom": "Marc Rimbault",
+      "description": "Mari de Julie. Les Rimbaults sont un couple d'amis rencontrés en voyage.",
+      "titre": "Amis de voyage"
+    },
+    {
+      "nom": "Julie Rimbault",
+      "description": "Femme de Marc. Les Rimbaults sont un couple d'amis rencontrés en voyage.",
+      "titre": "Amis de voyage"
+    },
+    {
+      "nom": "Mme. LaFleur",
+      "description": "La gouvernante de la maison du professeur, qui a vu et entendu beaucoup.",
+      "titre": "Gouvernante"
+    },
+    {
+      "nom": "Alexandre Dupont",
+      "description": "Le frère du professeur, qui a des secrets à cacher.",
+      "titre": "Frère"
+    },
+    {
+      "nom": "Thierry Lapomme",
+      "description": "L'élève du professeur, qui a été influencé par ses enseignements.",
+      "titre": "Élève"
+    }
+  ]
+}

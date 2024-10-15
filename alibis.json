@@ -1,0 +1,235 @@
+[
+    {
+        "room_short_name": "living room",
+        "alibi": "Was choosing a booking in the library.",
+        "object_alteration": "library",
+        "state_given": "few books seems missing",
+        "object_informations": "",
+        "nb_possible_actions": 2,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "any",
+        "alibi": "was talking with xx",
+        "objects_alteration": "",
+        "objects_informations": "",
+        "nb_possible_actions": 10,
+        "nb_characters_involved": 2
+    },
+    {
+        "room_short_name": "living room",
+        "alibi": "was reading a book on the sofa",
+        "object_alteration": "",
+        "object_informations": "",
+        "nb_possible_actions": 2,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "living room",
+        "alibi": "Was playing billard.",
+        "objects_alteration": "billard",
+        "objects_informations": "",
+        "nb_possible_actions": 2,
+        "nb_characters_involved": 2
+    },
+    {
+        "room_short_name": "living room",
+        "alibi": "Was watching the news on TV",
+        "objects_alteration": "TV",
+        "state_given": "The TV seems to be set on the news channel", 
+        "objects_informations": "",
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "living room",
+        "alibi": "Was watching a movie on TV",
+        "objects_alteration": "TV",
+        "state_given": "The TV seems to show the end of a movie ",
+        "objects_informations": "", 
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "living room",
+        "alibi": "Was playing a video game on TV",
+        "state_given": "The TV seems to have been set on video game",
+        "objects_alteration": "TV",
+        "objects_informations": "", 
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "office",
+        "alibi": "Was feeding the fish",
+        "objects_alteration": "aquarium",
+        "state_given":["The fish looks starving.. it hasn't be fed from long time.", "The fish seems happy", "The fish is dead.. someone gave him too much food.."],
+        "objects_informations": "",
+        "nb_possible_actions": 2,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "office",
+        "alibi": "Was reading some documents",
+        "objects_alteration": "",
+        "objects_informations": "documents",
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "office",
+        "alibi": "Was taking a nap on the chair",
+        "objects_alteration": "",
+        "objects_informations": "",
+        "nb_possible_actions": "1",
+        "nb_characters_involved": "1"
+    },
+    {
+        "room_short_name": "office",
+        "alibi": "was looking at the map/painting",
+        "objects_alteration": "",
+        "objects_informations": "painting",
+        "nb_possible_actions": "",
+        "nb_characters_involved": ""
+    },
+    {
+        "room_short_name": "bedroom",
+        "alibi": "was taking a nap on the bed",
+        "objects_alteration": "bed",
+        "state_given": "It looks like someone used this bed recently..",
+        "objects_informations": "",
+        "nb_possible_actions": "3",
+        "nb_characters_involved": "1"
+    },
+    {
+        "room_short_name": "bedroom",
+        "alibi": "was cleaning the bed",
+        "objects_alteration": "bed",
+        "state_given": "This bed is super clean.",
+        "objects_informations": "",
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "bedroom",
+        "alibi": "was reading a book on the bed",
+        "objects_alteration": "bed",
+        "state_given": "It looks like someone used this bed recently..",
+        "objects_informations": "",
+        "object_needed": "book",
+        "nb_possible_actions": 2,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "bedroom",
+        "alibi": "was looking at the painting",
+        "objects_alteration": "",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": ""
+    },
+    {
+        "room_short_name": "dining room",
+        "alibi": "was cleaning the table",
+        "objects_alteration": "table",
+        "state_needed": "dirty",
+        "state_given": "clean",
+        "objects_informations": "",
+        "nb_possible_actions": "2",
+        "nb_characters_involved": "1"
+    },
+    {
+        "room_short_name": "dining room",
+        "alibi": "",
+        "objects_alteration": "",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": ""
+    },
+    {
+        "room_short_name": "dining room",
+        "alibi": "",
+        "objects_alteration": "",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": ""
+    },
+    {
+        "room_short_name": "bathroom",
+        "alibi": "was taking a bath.",
+        "objects_alteration": "bathtub",
+        "state_given": "it is all wet",
+        "objects_informations": "",
+        "nb_possible_actions": 2,
+        "nb_characters_involved": 1,
+        "more": "nobody can be in the bathroom while i take it."
+    },
+    {
+        "room_short_name": "bathroom",
+        "alibi": "i was brushing my teeth",
+        "objects_alteration": "sink",
+        "state_given": "there is some paste_tooth in the sink",
+        "objects_informations": "",
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "bathroom",
+        "alibi": "i was shaving",
+        "objects_alteration": "sink",
+        "state_given": "there is some hair in the sink",
+        "objects_informations": "",
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "bathroom",
+        "alibi": "i was cleaning the bathroom",
+        "objects_alteration": ["bathtub", "sink"],
+        "state_given": "it looks super clean",
+        "objects_informations": "",
+        "nb_possible_actions": 1,
+        "nb_characters_involved": 1
+    },
+    {
+        "room_short_name": "kitchen",
+        "alibi": "was preparing food for the community",
+        "objects_alteration": "",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": ""
+    },
+    {
+        "room_short_name": "kitchen",
+        "alibi": "was washing the dishes",
+        "objects_alteration": "sink",
+        "state_needed": "the sink is dirty",
+        "state_given": "the sink and the dishes are clean",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": ""
+    },
+    {
+        "room_short_name": "toilets",
+        "alibi": "was stuck in the toilets",
+        "objects_alteration": "toilets",
+        "state_given": "it doesn't smell very good..",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": "",
+        "need_privacy": "yes"
+    },
+    {
+        "room_short_name": "toilets",
+        "alibi": "was cleaning the toilets",
+        "objects_alteration": "toilets",
+        "state_given": "the toilets looks clean",
+        "objects_informations": "",
+        "nb_possible_actions": "",
+        "nb_characters_involved": "",
+        "need_privacy": "yes"
+    }
+]
+
+
+

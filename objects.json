@@ -1,0 +1,302 @@
+[
+    {
+        "identifier": 1,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Clé",
+        "short_name": "key",
+        "description": ["Une clé en métal."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 2,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Lit",
+        "short_name": "bed",
+        "description": ["Un lit confortable."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 3,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Table",
+        "short_name": "table",
+        "description": ["Une table ancienne."],
+        "all_states": [],
+        "first_state": 0
+    },
+
+
+
+
+    {
+        "identifier": 4,
+        "room": "office",
+        "room_id": 4,
+        "name": "Bureau",
+        "short_name": "desk",
+        "description": ["Un grand bureau en bois."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 5,
+        "room": "office",
+        "room_id": 4,
+        "name": "Chaise",
+        "short_name": "chair",
+        "description": ["Une chaise confortable."],
+        "all_states": [],
+        "first_state": 0
+    },
+
+
+
+    {
+        "identifier": 6,
+        "room": "kitchen",
+        "room_id": 5,
+        "name": "Réfrigérateur",
+        "short_name": "fridge",
+        "description": ["Un réfrigérateur moderne."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 7,
+        "room": "kitchen",
+        "room_id": 5,
+        "name": "Évier",
+        "short_name": "sink",
+        "description": ["Un évier en inox."],        
+        "all_states": [],     
+        "first_states": ["L'évier est propre. De la vaisselle sembe avoir été faite récemment.", 
+        "L'évier est sale, des assiettes sont entreposées dedans."]
+    },
+
+
+
+
+    {
+        "identifier": 8,
+        "room": "dining room",
+        "room_id": 6,
+        "name": "Chaises",
+        "short_name": "chairs",
+        "description": ["Des chaises confortables."],
+        "all_states": [],
+        "first_state": 0
+    },
+
+
+    {
+        "identifier": 9,
+        "room": "corridor",
+        "room_id": 7,
+        "name": "Miroir",
+        "short_name": "mirror",
+        "description": ["Un grand miroir."],
+        "all_states": [],
+        "first_state": ["C'est un grand miroir. Vous voyez votre reflet dedans", "C'est une grande"]
+    },
+
+
+
+
+    {
+        "identifier": 10,
+        "room": "hall",
+        "room_id": 8,
+        "name": "Tapis",
+        "short_name": "doormat",
+        "description": ["Un tapis de bienvenue."],
+        "all_states": ["Le tapis est propre", "Le tapis présente des traces des pas.. quelqu'un n'a pas enlevé ses chassures avant de passer par là.", 
+    "Il y a des traces de sang sur le tapis."],
+        "first_state": 0
+    },
+    {
+        "identifier": 101,
+        "room": "hall",
+        "room_id": 8,
+        "name": "Porte d'entrée",
+        "short_name": "door",
+        "description": ["La porte d'entrée."],
+        "all_states": ["La porte est fermée. Elle n'a pas de trace particulière.", 
+        "Il y a du sang sur la poignée.."],
+        "first_state": 0
+    },
+    {
+        "identifier": 11,
+        "room": "living room",
+        "room_id": 9,
+        "name": "Canapé",
+        "short_name": "sofa",
+        "description": ["Un canapé confortable."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 12,
+        "room": "cellar",
+        "room_id": 10,
+        "name": "Étagères",
+        "short_name": "shelves",
+        "description": ["Des étagères pour le vin."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 13,
+        "room": "bathroom",
+        "room_id": 11,
+        "name": "Baignoire",
+        "short_name": "bathtub",
+        "description": ["Une baignoire en céramique."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 14,
+        "room": "toilet",
+        "room_id": 12,
+        "name": "Papier toilette",
+        "short_name": "toilet paper",
+        "description": ["Un rouleau de papier toilette."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 15,
+        "room": "pantry",
+        "room_id": 13,
+        "name": "Conserves",
+        "short_name": "canned goods",
+        "description": ["Des conserves de légumes."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 16,
+        "room": "library",
+        "room_id": 14,
+        "name": "Livres",
+        "short_name": "books",
+        "description": ["Des livres anciens."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 17,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Peinture",
+        "short_name": "painting",
+        "description": ["Une belle peinture accrochée au mur."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 18,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Corbeille",
+        "short_name": "trash",
+        "description": ["Une corbeille à papier."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 19,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Carnet",
+        "short_name": "notebook",
+        "description": ["Un carnet pour prendre des notes."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 20,
+        "room": "bedroom",
+        "room_id": 1,
+        "name": "Lampe",
+        "short_name": "lamp",
+        "description": ["Une lampe de bureau."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 21,
+        "room": "kitchen",
+        "room_id": 5,
+        "name": "Four",
+        "short_name": "oven",
+        "description": ["Un four moderne."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 22,
+        "room": "dining room",
+        "room_id": 6,
+        "name": "Vaisselle",
+        "short_name": "crockery",
+        "description": ["Un ensemble de vaisselle."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 23,
+        "room": "dining room",
+        "room_id": 6,
+        "name": "Nappe",
+        "short_name": "tablecloth",
+        "description": ["Une nappe élégante."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 24,
+        "room": "corridor",
+        "room_id": 7,
+        "name": "Porte-manteau",
+        "short_name": "coat rack",
+        "description": ["Un porte-manteau en bois."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 25,
+        "room": "toilet",
+        "room_id": 12,
+        "name": "Lavabo",
+        "short_name": "sink",
+        "description": ["Un lavabo moderne."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 26,
+        "room": "pantry",
+        "room_id": 13,
+        "name": "Snacks",
+        "short_name": "snacks",
+        "description": ["Des collations variées."],
+        "all_states": [],
+        "first_state": 0
+    },
+    {
+        "identifier": 27,
+        "room": "library",
+        "room_id": 14,
+        "name": "Table de lecture",
+        "short_name": "reading table",
+        "description": ["Une table pour lire."],
+        "all_states": [],
+        "first_state": 0
+    }
+]

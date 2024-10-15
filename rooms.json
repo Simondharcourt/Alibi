@@ -1,0 +1,98 @@
+[
+    {
+        "identifier": 1,
+        "name": "La chambre du Professeur",
+        "short_name": "bedroom",
+        "description": "Une chambre spacieuse avec un lit confortable et des meubles anciens.",
+        "possible_adjacent_room": ["corridor", "office", "living room"],
+        "possible_objects": ["bed", "painting", "key", "trash", "notebook", "lamp", "table", "book"]
+    },
+    {
+        "identifier": 4,
+        "name": "Le bureau du Professeur",
+        "short_name": "office",
+        "description": "Un bureau encombré de livres et de papiers, avec un grand bureau en bois.",
+        "possible_adjacent_room": ["library", "bedroom"],
+        "possible_objects": ["desk", "computer", "bookshelf", "chair"]
+    },
+    {
+        "identifier": 5,
+        "name": "La cuisine",
+        "short_name": "kitchen",
+        "description": "Une cuisine fonctionnelle avec des électroménagers modernes et des ustensiles de cuisine.",
+        "possible_adjacent_room": ["dining room", "pantry"],
+        "possible_objects": ["fridge", "oven", "sink", "table"]
+    },
+    {
+        "identifier": 6,
+        "name": "La salle à manger",
+        "short_name": "dining room",
+        "description": "Une salle à manger élégante avec une grande table et des chaises confortables.",
+        "possible_adjacent_room": ["kitchen", "living room"],
+        "possible_objects": ["table", "chairs", "crockery", "tablecloth"]
+    },
+    {
+        "identifier": 7,
+        "name": "Le couloir",
+        "short_name": "corridor",
+        "description": "Un couloir long et sombre avec des portes menant à différentes pièces.",
+        "possible_adjacent_room": ["hall", "living room", "bathroom", "bedroom"],
+        "possible_objects": ["coat rack", "mirror", "shoe cabinet"]
+    },
+    {
+        "identifier": 8,
+        "name": "L'entrée",
+        "short_name": "hall",
+        "description": "Un hall d'entrée spacieux.",
+        "possible_adjacent_room": ["corridor", "cellar"],
+        "possible_objects": ["doormat", "umbrella stand", "coat hooks"]
+    },
+    {
+        "identifier": 9,
+        "name": "Le salon",
+        "short_name": "living room",
+        "description": "Un salon confortable avec un canapé et une télévision.",
+        "possible_adjacent_room": ["dining room", "office", "bedroom", "corridor"],
+        "possible_objects": ["sofa", "television", "coffee table", "bookshelf"]
+    },
+    {
+        "identifier": 10,
+        "name": "La cave",
+        "short_name": "cellar",
+        "description": "Une cave sombre et humide avec des rangements pour les vins et les provisions.",
+        "possible_adjacent_room": ["hall"],
+        "possible_objects": ["wine rack", "shelves", "storage boxes"]
+    },
+    {
+        "identifier": 11,
+        "name": "La salle de bain",
+        "short_name": "bathroom",
+        "description": "Une salle de bain fonctionnelle avec une baignoire et un lavabo.",
+        "possible_adjacent_room": ["corridor", "toilet"],
+        "possible_objects": ["bathtub", "sink", "toilet", "mirror"]
+    },
+    {
+        "identifier": 12,
+        "name": "Les toilettes",
+        "short_name": "toilet",
+        "description": "Des toilettes fonctionnelles avec un lavabo et du papier toilette.",
+        "possible_adjacent_room": ["bathroom"],
+        "possible_objects": ["toilet", "sink", "toilet paper"]
+    },
+    {
+        "identifier": 13,
+        "name": "Le garde-manger",
+        "short_name": "pantry",
+        "description": "Un garde-manger avec des étagères pour les provisions et les ingrédients.",
+        "possible_adjacent_room": ["kitchen"],
+        "possible_objects": ["shelves", "canned goods", "snacks"]
+    },
+    {
+        "identifier": 14,
+        "name": "La bibliothèque",
+        "short_name": "library",
+        "description": "Une bibliothèque avec des étagères remplies de livres anciens et rares.",
+        "possible_adjacent_room": ["office"],
+        "possible_objects": ["books", "reading table", "shelves"]
+    }
+]
