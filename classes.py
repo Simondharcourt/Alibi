@@ -11,13 +11,39 @@ class Character:
         self.name = name
         self.is_alive = is_alive
         self.current_room = current_room  # Initialise la pièce actuelle
+        self.is_a_player = False
     
     def place_character(self, room):
         self.current_room = room
         
+    def render_all_possible_action_from_character(self, state_game):
+        all_possible_action = []
+        for object in self.current_room.render_all_objects_in_room():
+            all_possible_action += object.render_all_possible_action_from_this_object(state_game)
+        for character in self.current_room.render_all_characters_in_room():
+            all_possible_action += character.render_all_possible_action_with_character(state_game)
+        return all_possible_action
+    
+    def render_all_possible_action_with_character(self, state_game):
+        all_possible_action = []
+        if state_game == 1:
+            if len(self.current_room.render_all_characters_in_room()) == 2:
+                all_possible_action.append(Action("Kill"))
+            else:
+                for character in self.current_room.render_all_characters_in_room():
+                    if character.name != self.name:
+                        all_possible_action.append(Action("Talk to " + character.name))
+        elif state_game == 2:
+            if self.is_a_player:
+                for character in self.current_room.render_all_characters_in_room():
+                    if character.name != self.name and not character.is_a_player:
+                        all_possible_action.append(Action("Interrogate " + character.name))      
+            else:
+                all_possible_action.append(Action("Cry"), Action("Investigate"), Action("Hide"), Action("Wait"))
+        return all_possible_action
+        
     def take_action(self): # after moving to another room
         pass
-
 
     def move_to_room(self, new_room=None):  # Ajout d'une méthode pour déplacer le personnage
         if not self.current_room.adjacent_rooms:
@@ -25,8 +51,9 @@ class Character:
             
         if not new_room:  # Si le mouvement aléatoire est demandé
             new_room = random.choice(self.current_room.adjacent_rooms + [self.current_room])  # Choisi une pièce adjacente au hasard
+        self.current_room.remove_character(self)
         self.current_room = new_room  # Met à jour la pièce actuelle
-
+        self.current_room.add_character(self)
 
     def examine_object(self, object_id=None, random=False):  # Ajoute une méthode pour examiner un objet
         if random:  # Si l'examen aléatoire est demandé
@@ -59,8 +86,8 @@ class Object:
         self.current_state = current_state
         self.actions = {}
         
-    def render_all_possible_action_from_object(self, body_found=False): # actions suggested are not the same before or after the body is revealed.
-        return self.actions[body_found][self.current_state] # to develop.
+    def render_all_possible_action_from_this_object(self, state_game=1): # actions suggested are not the same before or after the body is revealed.
+        return self.actions[state_game][self.current_state] # to develop.
         
     def use_object(self):
         print("You're using ", self.name)
@@ -81,6 +108,7 @@ class Room:
         self.possible_adjacent_rooms_short_name = possible_adjacent_rooms_short_name if possible_adjacent_rooms_short_name is not None else []
         self.adjacent_rooms = []
         self.objects = objects if objects is not None else [] 
+        self.characters = []
         
     def add_adjacent_room(self, room):
         if room not in self.adjacent_rooms:
@@ -91,10 +119,23 @@ class Room:
         if obj.identifier not in [o.identifier for o in self.objects]:
             self.objects.append(obj)  # Ajoute l'objet à la liste des objets de la pièce
 
+    
+    def add_character(self, character):
+        if character in self.characters:
+            raise ValueError("Character already in room")
+        self.characters.append(character)
+        
+    def remove_character(self, character):
+        if character not in self.characters:
+            raise ValueError("Character not in room")
+        self.characters.remove(character)
+
+    def render_all_characters_in_room(self):
+        return self.characters
+    
     def render_all_objects_in_room(self):
         return self.objects
     
-
     def generate_room(self, short_name):
         import json
         with open('rooms.json', 'r') as file:
@@ -143,7 +184,6 @@ class Game:
             self.create_characters()
         self.place_all_characters()
         
-        
     def start_game(self):
         while self.current_time < 8:
             for character in self.characters:
@@ -177,6 +217,7 @@ class Game:
                 first_place = room
         for character in self.characters:
             character.place_character(first_place)
+            first_place.add_character(character)
 
     def add_character(self, character):
         self.characters.append(character)  # Ajoute un joueur à la liste
